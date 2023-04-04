@@ -1,0 +1,77 @@
+:root {
+  --main-bg-color: #edf5fe;
+  --ligh-blue: #03a9f4;
+  --dark-blue: #028bca;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--main-bg-color);
+  height: 98vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+}
+
+section.download {
+  background: #fff;
+  width: 430px;
+  max-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 20px 20px 0px #00000017;
+  padding: 2rem;
+  text-align: center;
+}
+
+.download_icon {
+  height: 8rem;
+}
+
+.download_meta {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.send-btn-container a {
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 40px;
+  margin-top: 15px;
+  background: var(--ligh-blue);
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn-container a:hover {
+  background: var(--dark-blue);
+}
+
+.btn {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 15px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: blue;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid white;
+}
