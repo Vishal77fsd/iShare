@@ -28,11 +28,12 @@ async function deleteData() {
     }
     console.log(`Job done!`);
   }
+
+  console.log("Deleting some files");
 }
 
 // For production uncomment this
-// setInterval(deleteData, 24 * 60 * 60);
-deleteData().catch(console.dir);
+setInterval(deleteData, (60 * 60 * 1000));
 
 // serving static files
 app.use(express.static("public"));
