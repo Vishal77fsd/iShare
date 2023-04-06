@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 1000 * 100 },
+  limits: { fileSize: (1 * 10000 * 10000) },
 }).single("myfile");
 
 router.post("/upload", (req, res) => {
@@ -34,11 +34,6 @@ router.post("/upload", (req, res) => {
     // console.log(req.file);
 
     if (!req.file) {
-      return res.redirect("/");
-    }
-
-    const limitSize = 100 * 10000;
-    if (req.file.size > limitSize) {
       return res.redirect("/");
     }
 
